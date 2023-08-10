@@ -1,13 +1,13 @@
-# redocly-openapi-cli-github-action
+# redocly-cli-github-action
 
-#### A Github action for running redocly openapi-cli commands
+#### A Github action for running redocly commands
 
 ## :keyboard: Inputs
 
 ### `args`
 
-The arguments to be provided to the redocly `openapi` cli command.
-By default this is empty so that redocly `openapi` cli will print a note about its correct usage.
+The arguments to be provided to the `redocly` cli command.
+By default this is empty so that `redocly` cli will print a note about its correct usage.
 
 ## :bulb: Quick Start
 
@@ -21,8 +21,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: openapi bundle
-        uses: trybeapp/redocly-openapi-cli-github-action@v0.0.1
+      - name: redocly bundle
+        uses: CiTroNaK/redocly-cli-github-action@master
         with:
           args: 'bundle test/petstore.yml'
 ```
@@ -39,8 +39,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: openapi lint
-        uses: trybeapp/redocly-openapi-cli-github-action@v0.0.1
+      - name: redocly lint
+        uses: CiTroNaK/redocly-cli-github-action@master
         with:
           args: 'lint test/petstore.yml'
 ```
@@ -49,4 +49,4 @@ This example validates your OpenAPI definition files to ensure they do not conta
 
 ## :blue_book: References
 
-- [Redocly OpenAPI CLI](https://redoc.ly/docs/cli/)
+- [Redocly CLI](https://redoc.ly/docs/cli/)
