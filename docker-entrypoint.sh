@@ -8,4 +8,4 @@ echo "redocly version: $(redocly --version)"
 
 output=$(redocly $1)
 
-echo "{output}={$output}" >> $GITHUB_OUTPUT
+echo "output<<EOF"$'\n'"$output"$'\n'EOF >> $GITHUB_OUTPUT
