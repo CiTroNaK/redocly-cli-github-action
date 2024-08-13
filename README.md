@@ -6,8 +6,8 @@
 
 ### `args`
 
-The arguments to be provided to the `redocly` cli command.
-By default this is empty so that `redocly` cli will print a note about its correct usage.
+The arguments to be provided to the `redocly/cli` cli command.
+By default this is empty so that `redocly/cli` cli will print a note about its correct usage.
 
 ## :bulb: Quick Start
 

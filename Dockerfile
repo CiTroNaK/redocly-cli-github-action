@@ -1,4 +1,4 @@
-FROM redocly/cli:1.0.2
+FROM redocly/cli:1.19.0
 
 COPY LICENSE.md README.md /
 
